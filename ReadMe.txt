@@ -1,0 +1,1 @@
+﻿Esri中国2013年开发者大会“云时代下，GIS全新的应用模式——ArcGIS Online”演示示例代码。开发环境：Aptana Studio 3 & ArcGIS API for Javascript 3.3。用于演示agsjs api的基本开发步骤及社交数据的挖掘展示。

@@ -1,0 +1,81 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN"
+"http://www.w3.org/TR/html4/strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <title>Talk About Map</title>
+        <meta name="author" content="GAO JIE @ESRI2013" />
+        <!-- Date: 2013-02-26 -->
+        
+        <!--css-->
+        <link rel="stylesheet" type="text/css" href="css/normalize.css" />
+        <link rel="stylesheet" type="text/css" href="http://serverapi.arcgisonline.com/jsapi/arcgis/3.3/js/esri/css/esri.css" />
+        <link rel="stylesheet" type="text/css" href="css/application.css" />
+        <link rel="stylesheet" type="text/css" href="css/mediaQueries.css" />
+        <link rel="stylesheet" type="text/css" href="css/dialog.css" />
+        <link rel="stylesheet" type="text/css" href="css/slider.css" />
+        <link rel="stylesheet" type="text/css" href="css/dijit.css" />
+        <link rel="stylesheet" type="text/css" href="css/geocoder.css" />
+        <link rel="stylesheet" type="text/css" href="css/social/twitter.css" />
+        <link rel="stylesheet" type="text/css" href="css/social/youtube.css" />
+        <link rel="stylesheet" type="text/css" href="css/social/flickr.css" />
+        <link rel="stylesheet" type="text/css" href="css/social/panoramio.css" />
+        <link rel="stylesheet" type="text/css" href="css/social/ushahidi.css" />
+        <!--Scripts-->
+        <script type="text/javascript">
+            var _gaq= _gaq || [];
+            _gaq.push(['_setAccount', 'UA-215788-43']);
+            _gaq.push(['_setDomainName', ".arcgis.com"]);
+            _gaq.push(['_trackPageview']);
+              (function() {
+                var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;//异步加载
+                ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+                var s = document.getElementsByTagName('script')[0]; 
+                s.parentNode.insertBefore(ga, s);
+                })();
+        </script>
+        <script type="text/javascript" src="config/config.js"></script>
+        <script type="text/javascript" src="js/application/djConfig.js"></script>
+        <script type="text/javascript" src="http://tm.arcgisonline.cn:8038/App1/arcgis_js_v33_api/library/3.3/jsapi/init.js"></script>
+        <!-- <script type="text/javascript" src="http://localhost/arcgis_js_api/library/3.3/jsapi/init.js"></script> -->
+        <script type="text/javascript" src="js/plugins/respond.js"></script>
+        <script type="text/javascript" src="js/plugins/heatmap.js"></script>
+        <script type="text/javascript" src="js/plugins/requires.js"></script>
+        <script type="text/javascript">
+            require(["application/main"],function(application){
+                new application(configOptions);
+            });
+        </script>
+    </head>
+    <body class="modernGrey">
+       <div id="mapcon">
+        <div id="map" class="mapLoading" dir="ltr"></div>
+        <div id="zoomSlider"></div>
+        <div id="heatLayer"></div>
+        <div id="topMenuBar">
+            <div id="topMenuCon">
+                <div id="topMenuLeft">
+                    <h1 id="mapTitle">Talk About Map</h1>
+                    <div id="locateBox">
+                        <div id="geocoderSearch"></div>
+                    </div>
+                    <div class="buttonCon">
+                       <div id="placesCon"></div>
+                       <div id="shareMap"></div>
+                       <div class="clear"></div>
+                    </div>
+                </div>
+                <div id="topMenuRight">
+                    <div id="aboutMapCon"></div>
+                    <div id="menuList"></div>
+                    <div class="clear"></div>
+                </div>
+            </div>
+        </div>
+        <div id="settingsDialog"></div>
+        <div id="alertDialog"></div>
+        <div id="aboutDialog"></div>
+       </div>
+    </body>
+</html>
+
